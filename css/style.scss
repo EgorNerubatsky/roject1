@@ -1,0 +1,731 @@
+// Импорт (Файл обнуляющих стилей)
+@import "nullstyle.scss";
+
+%mons12upper {
+	//@extend %mons12upper;
+	font-family: "Montserrat", sans-serif;
+	color: #fffefd;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+%mons18upperblack {
+	//@extend %mons18upperblack;
+	font-family: "Montserrat", sans-serif;
+	color: #0c0c0c;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+
+%NunitoSans18p {
+	//@extend %NunitoSans18p;
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	//letter-spacing: 1px;
+	color: #808082;
+}
+
+%NunitoSans16p {
+	//@extend %NunitoSans16p;
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	//letter-spacing: 1px;
+	color: #4b4b4b;
+}
+
+%monsh2 {
+	//@extend %monsh2;
+	font-family: "Montserrat", sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #1e1c1d;
+}
+%serwicesstyly {
+	//@extend %serwicesstyly;
+	h3 {
+		@extend %mons12upper;
+		color: #0c0c0c;
+		font-weight: 600;
+		margin: 15px 15px;
+	}
+	p {
+		@extend %NunitoSans16p;
+		color: #8d7373;
+		line-height: 20px;
+	}
+}
+
+body {
+	width: 1330px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+/*------------------------------------------ Head Section Start ----------------------------------------------------*/
+#head {
+	display: block;
+	width: 100%;
+	height: 670px;
+	//border: 1px solid black;
+	background: url(../img/head_1.jpg) 0 0 no-repeat;
+
+	.head__navigationlist {
+		display: block;
+		max-width: 600px;
+		margin-right: 60px;
+		margin-left: auto;
+		padding-top: 30px;
+	}
+	.head__navigationlist ul li {
+		font-family: "Montserrat", sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin: 0 10px 0 10px;
+		display: inline;
+	}
+
+	.head__navigationlist ul a {
+		@extend %mons12upper;
+		color: rgba(0, 0, 0, 0.719);
+		font-weight: 800;
+		height: 11px;
+	}
+
+	.head__navigationlist ul li.active a {
+		color: #0cc9c2;
+	}
+
+	.head__WeDesign {
+		max-width: 490px;
+		max-height: 400px;
+		margin-left: auto;
+		margin-right: 150px;
+		margin-top: 80px;
+
+		h1 {
+			@extend %monsh2;
+			font-size: 30px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			color: #1e1c1d85;
+		}
+
+		p {
+			line-height: 30px;
+			margin-top: 30px;
+			@extend %NunitoSans16p;
+			font-size: 18px;
+			font-weight: 400;
+			color: #1c1c1d;
+		}
+	}
+
+	.button_contact {
+		display: block;
+		height: 40px;
+		width: 170px;
+		background: #10c9c3;
+		margin-top: 30px;
+		padding: 15px 25px;
+	}
+
+	.button_contact a {
+		@extend %mons12upper;
+		color: #fffefd;
+		padding: 10px 10px 10px 10px;
+	}
+}
+/*------------------------------------------ Head Section End ----------------------------------------------------*/
+
+/*------------------------------------------ About Section Start ----------------------------------------------------*/
+.about {
+	//border: 1px solid rgb(233, 14, 14);
+	width: 100%;
+	height: 400px;
+
+	.about__textblock {
+		max-width: 700px;
+		max-height: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 80px;
+		text-align: center;
+	}
+
+	h2 {
+		@extend %monsh2;
+		font-size: 30px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		color: #1e1c1d85;
+	}
+
+	p {
+		line-height: 30px;
+		margin-top: 30px;
+		@extend %NunitoSans16p;
+		font-size: 18px;
+		font-weight: 400;
+		color: #1c1c1d;
+	}
+}
+
+.about__signature {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+/*------------------------------------------ About Section End ----------------------------------------------------*/
+
+/*------------------------------------------ Skills Section Start ----------------------------------------------------*/
+
+#skills {
+	width: 100%;
+	height: 450px;
+	background: url(../img/body_1.jpg) bottom left no-repeat;
+
+	.skills {
+		width: 800px;
+		height: 448px;
+		text-align: left;
+		vertical-align: middle;
+		display: table-cell;
+		padding: 50px;
+		position: relative;
+	}
+
+	.skills__block {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 600px;
+		height: 200px;
+		margin-left: -300px;
+		margin-top: -100px;
+
+		.skills__title {
+			@extend %monsh2;
+			color: #1e1c1d85;
+		}
+	}
+
+	.skills__list li {
+		@extend %mons12upper;
+		color: black;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.skills__list .skill {
+		display: block;
+		width: 600px;
+		height: 50px;
+	}
+
+	.skills__list .skill.skill-75 {
+		background: url(../img/75.jpg) bottom left no-repeat;
+	}
+
+	.skills__list .skill.skill-90 {
+		background: url(../img/90.jpg) bottom left no-repeat;
+	}
+
+	.skills__list .skill.skill-60 {
+		background: url(../img/60.jpg) bottom left no-repeat;
+	}
+}
+/*------------------------------------------ Skills Section End ------------------------------------------------------*/
+
+/*------------------------------------------ Cases Section Start -----------------------------------------------------*/
+#cases {
+	height: 250px;
+	background: #10c9c3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.cases {
+		display: flex;
+		justify-content: center;
+
+		.cases__case {
+			width: 250px;
+			margin: 1.5rem;
+			filter: invert(100%);
+			padding-left: 50px;
+			background-repeat: no-repeat;
+			background-position: 0 50%;
+		}
+		.cases__case_projects {
+			background-image: url("../img/airplay.svg");
+		}
+
+		.cases__case_hours {
+			background-image: url("../img/timer.svg");
+		}
+
+		.cases__case_feedbacks {
+			background-image: url("../img/star.svg");
+		}
+		.cases__case_clients {
+			background-image: url("../img/like.svg");
+		}
+
+		.cases__case h3 {
+			font-weight: 600;
+			margin-bottom: 10px;
+			@extend %mons18upperblack;
+			//font-family: "Montserrat", sans-serif;
+			color: #0c0c0c;
+			//text-transform: uppercase;
+			//letter-spacing: 1px;
+			font-size: 18px;
+		}
+
+		.cases__case p {
+			@extend %mons18upperblack;
+			color: black;
+			font-weight: 600;
+			color: #0c0c0c;
+			font-size: 12px;
+		}
+	}
+}
+/*------------------------------------------ Cases Section End -------------------------------------------------------*/
+
+/*------------------------------------------ Examples Section Start -------------------------------------------------------*/
+
+#examples {
+	height: 680px;
+	display: block;
+	width: 100%;
+	position: relative;
+
+	.examples__block {
+		height: 100%;
+		width: 102%;
+		position: absolute;
+		//top: 50%;
+		//left: 60%;
+		//margin-right: -50%;
+		//transform: translate(-50%, -50%);
+
+		.examples__example {
+			display: inline-block;
+			width: 330px;
+			height: 290px;
+		}
+
+		.examples__example_book {
+			background: url(../img/services_1.jpg) no-repeat;
+		}
+
+		.examples__example_phone {
+			background: url(../img/services_2.jpg) no-repeat;
+		}
+
+		.examples__example_bag {
+			background: url(../img/services_3.jpg) no-repeat;
+		}
+		.examples__example_stone {
+			background: url(../img/services_4.jpg) no-repeat;
+		}
+		.examples__example_glass {
+			background: url(../img/services_5.jpg) no-repeat;
+		}
+		.examples__example_bag2 {
+			background: url(../img/services_6.jpg) no-repeat;
+		}
+		.examples__example_honey {
+			background: url(../img/services_7.jpg) no-repeat;
+		}
+		.examples__example_balzam {
+			background: url(../img/services_8.jpg) no-repeat;
+		}
+		.examples__example_book {
+			background: url(../img/services_8.jpg) no-repeat;
+		}
+	}
+
+	.examples__linkloadmore {
+		display: inline-block;
+		position: absolute;
+		height: 100px;
+		width: 100%;
+		//border: black solid 1px;
+		background: #e7e5e5bd;
+		margin-top: 580px;
+		.loadmore {
+			display: block;
+			text-align: center;
+			height: 40px;
+			width: 150px;
+			position: relative;
+			top: 65%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
+			p {
+				@extend %mons12upper;
+				color: blanchedalmond;
+				font-weight: 600;
+			}
+			a {
+				color: #808082;
+			}
+		}
+	}
+}
+
+/*------------------------------------------ Examples Section End -------------------------------------------------------*/
+
+/*------------------------------------------ Workprocess Section Start -------------------------------------------------------*/
+#workprocess {
+	display: block;
+	height: 800px;
+	width: 100%;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.021);
+
+	.workprocess {
+		display: block;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		//margin-right: -50%;
+		transform: translate(-50%, -50%);
+
+		.workprocess__content {
+			position: absolute;
+			top: -15%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+
+			h2 {
+				@extend %monsh2;
+				margin-bottom: 20px;
+				margin-top: 30px;
+			}
+			p {
+				@extend %NunitoSans18p;
+				line-height: 30px;
+				margin-bottom: 50px;
+			}
+			video {
+				height: 500px;
+			}
+		}
+	}
+}
+/*------------------------------------------ Workprocess Section Start -------------------------------------------------------*/
+
+/*------------------------------------------ Serwices Section Start -----------------------------------------------------*/
+#serwice {
+	height: 400px;
+	display: block;
+	width: 100%;
+	position: relative;
+	background: #e7e5e5bd;
+
+	.serwices {
+		//border: #0c0c0c 1px solid;
+		height: 400px;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+
+		.serwices__serwice {
+			//border: #0c0c0c 1px solid;
+			display: inline-block;
+			width: 270px;
+			margin: 27px;
+			padding-top: 50px;
+			padding-left: 10px;
+			text-align: center;
+			@extend %serwicesstyly;
+		}
+		.serwices__serwice_design {
+			background: url(../img/diamond.png) top center no-repeat;
+		}
+		.serwices__serwice_development {
+			background: url(../img/arc.png) top center no-repeat;
+		}
+		.serwices__serwice_mobile {
+			background: url(../img/phone.png) top center no-repeat;
+		}
+		.serwices__serwice_gamedesign {
+			background: url(../img/joy.png) top center no-repeat;
+		}
+		.serwices__serwice_SEO {
+			background: url(../img/plane.png) top center no-repeat;
+		}
+		.serwices__serwice_photography {
+			background: url(../img/star.png) top center no-repeat;
+		}
+		.serwices__serwice_graphicdesign {
+			background: url(../img/magic-wand.png) top center no-repeat;
+		}
+		.serwices__serwice_illustrations {
+			background: url(../img/bucket.png) top center no-repeat;
+		}
+	}
+}
+
+/*------------------------------------------ Serwices Section End -----------------------------------------------------*/
+
+/*------------------------------------------ Quote Section Start -----------------------------------------------------*/
+#quote {
+	height: 400px;
+	display: block;
+	width: 100%;
+	position: relative;
+	background: #10c9c3;
+}
+
+#quote .blockquote {
+	position: absolute;
+	width: 70%;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	//border: 1px solid rgb(233, 14, 124);
+
+	blockquote {
+		text-align: center;
+		@extend %monsh2;
+		color: #f5f5f5;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 35px;
+	}
+
+	p {
+		@extend %mons12upper;
+		letter-spacing: 2px;
+		margin: 30px;
+	}
+}
+/*------------------------------------------ Quote Section End -----------------------------------------------------*/
+
+/*------------------------------------------ Feedback Section Start -----------------------------------------------------*/
+#feedback {
+	//	border: 1px solid rgb(233, 14, 124);
+	height: 600px;
+	display: block;
+	width: 100%;
+	position: relative;
+	background: #e7e5e5bd;
+
+	.feedback__promotext {
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		width: 600px;
+		text-align: center;
+
+		h2 {
+			@extend %monsh2;
+			margin-bottom: 30px;
+		}
+		p {
+			@extend %NunitoSans16p;
+			line-height: 25px;
+		}
+	}
+
+	.feedback__input {
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		@extend %NunitoSans16p;
+	}
+
+	.feedback__input_YourTitle {
+		//border: 1px solid rgb(233, 14, 124);
+		width: 400px;
+		height: 30px;
+		padding-left: 20px;
+		margin-bottom: 20px;
+	}
+
+	.feedback__input_YourTitle:focus {
+		box-shadow: 1px 1px 20px rgba(100, 228, 237, 0.884);
+	}
+
+	.feedback__input_youname {
+		//border: 1px solid rgb(233, 14, 124);
+		width: 190px;
+		height: 30px;
+		padding-left: 20px;
+		margin-bottom: 20px;
+	}
+
+	.feedback__input_youname:focus {
+		box-shadow: 1px 1px 20px rgba(100, 228, 237, 0.884);
+	}
+
+	.feedback__input_Yourmail {
+		//border: 1px solid rgb(233, 14, 124);
+		width: 190px;
+		height: 30px;
+		padding-left: 20px;
+		margin-bottom: 20px;
+		margin-left: 15px;
+	}
+	.feedback__input_Yourmail:focus {
+		box-shadow: 1px 1px 20px rgba(100, 228, 237, 0.884);
+	}
+	.feedback__input_YourComment {
+		//border: 1px solid rgb(233, 14, 124);
+		width: 400px;
+		height: 150px;
+		padding-left: 10%;
+		text-align: left;
+		resize: none;
+	}
+
+	.feedback__input_YourComment:focus {
+		box-shadow: 1px 1px 20px rgba(100, 228, 237, 0.884);
+	}
+
+	.feedback__button {
+		display: block;
+		height: 40px;
+		width: 200px;
+		background: #10c9c3;
+		margin-top: 30px;
+		padding: 15px 30px;
+		position: absolute;
+		top: 85%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.feedback__button:focus {
+		box-shadow: 1px 1px 20px rgba(100, 228, 237, 0.884);
+	}
+
+	.feedback__button a {
+		@extend %mons12upper;
+		color: #fffefd;
+		padding: 10px 10px 10px 10px;
+	}
+}
+
+/*------------------------------------------ Feedback Section End -----------------------------------------------------*/
+
+/*------------------------------------------ Footerinfo Section Start -----------------------------------------------------*/
+
+#footerinfo {
+	//border: 1px solid rgb(14, 233, 87);
+	height: 250px;
+	display: block;
+	width: 100%;
+	position: relative;
+	background: #141414;
+
+	.footerinfo {
+		//border: 1px solid rgb(127, 14, 233);
+		height: 250px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		width: 1200px;
+		//background: #141414;
+
+		.footerinfo__designetby {
+			display: inline-block;
+			//border: 1px solid rgb(127, 14, 233);
+			position: absolute;
+			top: 50%;
+			left: 10%;
+			margin-right: -70%;
+			transform: translate(-50%, -50%);
+			width: 280px;
+			height: 100px;
+			padding: 20px;
+			h3 {
+				@extend %monsh2;
+				font-size: 18px;
+				margin-bottom: 15px;
+				color: #f5f5f5;
+			}
+			p {
+				@extend %NunitoSans16p;
+				font-size: 15px;
+				line-height: 20px;
+				color: #f5f5f5;
+			}
+		}
+
+		.footerinfo__emailtel {
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			left: 30%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
+			width: 200px;
+			height: 100px;
+			padding: 20px;
+			margin-left: 140px;
+
+			p {
+				@extend %NunitoSans16p;
+				font-size: 15px;
+				line-height: 20px;
+				color: #f5f5f5;
+			}
+		}
+
+		.footerinfo__lists {
+			display: inline-block;
+			//border: 1px solid rgb(14, 233, 178);
+			position: absolute;
+			top: 60%;
+			left: 90%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
+			width: 650px;
+			height: 100px;
+			@extend %NunitoSans16p;
+			font-size: 15px;
+			line-height: 20px;
+
+			.footerinfo__list {
+				display: inline-block;
+				//border: 1px solid rgb(127, 14, 233);
+				margin-left: 40px;
+				width: 100px;
+				height: 100px;
+				a {
+					color: #f5f5f5;
+				}
+			}
+		}
+	}
+}
+/*------------------------------------------ Footerinfo Section End -----------------------------------------------------*/
